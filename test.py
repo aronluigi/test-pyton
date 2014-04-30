@@ -1,8 +1,11 @@
 #!/usr/bin/python
+from tkinter import *
 from GUI import frame
-from p2p import kokos
 
+root = Tk()
+root.title("Test Python Luigi")
+root.geometry("1024x768")
 
-Kokos = kokos.DataController()
-Kokos.get_data()
+app = frame.Application(root)
 
+root.mainloop()
