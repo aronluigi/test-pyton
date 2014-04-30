@@ -18,9 +18,6 @@ class Application(Frame):
         self.build_frame()
 
     def build_frame(self):
-        self.p2p_frame()
-
-    def p2p_frame(self):
         self.p2p_title_label = Label(self, text="Scan ID range", width=50, anchor=W)
         self.p2p_title_label.grid(row=0, column=0, columnspan=4, sticky=W)
 

@@ -80,7 +80,7 @@ class DataController(object):
             writer.writerow(write_data['content'])
 
     def gross_export(self, data):
-        with open('export/transation_status.csv', 'w', newline='', encoding='utf-8') as csv_file:
+        with open('export/transaction_status.csv', 'w', newline='', encoding='utf-8') as csv_file:
             writer = csv.writer(csv_file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
 
             writer.writerow(['Status', '# of transactions'])
