@@ -24,6 +24,7 @@ class DataController(object):
 
         response = urllib.request.urlopen("https://" + self.__domain + self.__url + "?" + params)
         response_data = response.readall().decode('utf-8')
+
         try:
             data = json.loads(response_data)
         except ValueError:
