@@ -4,7 +4,7 @@ from GUI import Frame
 
 root = Tk()
 root.title("Test Python Luigi")
-root.geometry("1024x768")
+# root.geometry("1024x768")
 
 app = Frame.Application(root)
 

@@ -15,6 +15,6 @@ def index(request):
         if data is False:
             data = ''
 
-        return HttpResponse(data)
+        return HttpResponse(data, content_type="application/json;charset=UTF-8")
     else:
         return HttpResponse("Phone nr must be digits.")
